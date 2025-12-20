@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio | Vanessa Zallianda</title>
+    <style>
+        body {
+
+            margin: 0;
+            font-family: "Poppins", Arial, sans-serif;
+            background-color: #f6f7fb;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .photo {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #f3c4d7;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .intro h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .intro p {
+            margin: 5px 0;
+            color: #777;
+        }
+
+        /* Section */
+        .section {
+            margin-top: 35px;
+        }
+
+        .section h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #5a67d8;
+        }
+
+        .about {
+            line-height: 1.7;
+            color: #555;
+        }
+
+        /* Biodata */
+        table {
+            width: 100%;
+            border-spacing: 0 10px;
+        }
+
+        td:first-child {
+            font-weight: 600;
+            width: 30%;
+            color: #444;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #f3c4d7;
+            color: #333;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #999;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #5a67d8;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+	 margin: 0;
+        font-family: "Poppins", Arial, sans-serif;
+        background-color: #fdecef;
+        color: #444;
+    }
+
+
+    /* === PINK SNOW EFFECT === */
+    .pink-snow {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        overflow: hidden;
+        z-index: 0;
+    }
+
+    .pink-snow span {
+        position: absolute;
+        top: -10%;
+        width: 16px;
+        height: 16px;
+        background: rgba(255, 182, 193, 0.8);
+        border-radius: 50%;
+        animation: snow 12s linear infinite;
+    }
+    .pink-snow span:nth-child(4n) {
+        width: 8px;
+   	height: 8px;
+        opacity: 0.6;
+        animation-duration: 6s;
+    }
+
+    .pink-snow span:nth-child(1) { left: 10%; animation-duration: 12s; width: 6px; height: 6px; }
+    .pink-snow span:nth-child(2) { left: 20%; animation-duration: 8s; }
+    .pink-snow span:nth-child(3) { left: 30%; animation-duration: 14s; width: 12px; height: 12px; }
+    .pink-snow span:nth-child(4) { left: 40%; animation-duration: 10s; }
+    .pink-snow span:nth-child(5) { left: 50%; animation-duration: 11s; width: 8px; height: 8px; }
+    .pink-snow span:nth-child(6) { left: 60%; animation-duration: 14s; }
+    .pink-snow span:nth-child(7) { left: 70%; animation-duration: 10s; width: 14px; height: 14px; }
+    .pink-snow span:nth-child(8) { left: 80%; animation-duration: 18s; }
+    .pink-snow span:nth-child(9) { left: 90%; animation-duration: 9s; }
+    .pink-snow span:nth-child(10){ left: 95%; animation-duration: 16s; width: 7px; height: 7px; }
+
+    @keyframes snow {
+        0% { transform: translateY(-10vh); opacity: 0; }
+        10% { opacity: 1; }
+        100% { transform: translateY(160vh); opacity: 0; }
+    }
+
+<head>
+    <style>
+        /* CSS lain */
+
+        .apple-walk {
+            position: fixed;
+            bottom: 20px;
+            left: 50px;
+            width: 80px;
+            animation: walk 12s linear infinite;
+            z-index: 9999;
+        }
+
+        .apple-walk img {
+            width: 100%;
+        }
+
+        @keyframes walk {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(110vw); }
+        }
+.apple-walk {
+            position: fixed;
+            bottom: 20px;
+            left: -100px;
+            width: 80px;
+            animation: walk 12s linear infinite;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+    </style>
+</head>
+<body>
+
+<!-- PINK SNOW -->
+<div class="pink-snow">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+
+</div>
+
+
+<div class="container">
+
+<div class="container">
+    <!-- isi portfolio kamu -->
+</div>
+
+<div class="apple-walk">
+    <img src="hi apple.png" alt="Apple Character">
+</div>
+
+
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="photo">
+            <img src="foto gw.JPEG" alt="Foto Profil">
+        </div>
+        <div class="intro">
+            <h1>Vanessa Zallianda</h1>
+            <p>Front End Developer</p>
+            <p>Email: Queen.nessa@gmail.com</p>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="section">
+        <h2>✨ Tentang Saya</h2>
+        <p class="about">
+            Hi!! saya Gen Z, saya seorang software enggineering yang tertarik pada dunia
+            Software, profesional, nyaman dan aman untuk di gunakan.
+            Terbiasa menggunakan HTML dan java untuk membuat website
+            yang modern, responsif, dan user-friendly.
+        </p>
+    </div>
+
+    <!-- BIODATA -->
+    <div class="section">
+        <h2>📌 Biodata</h2>
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td>Vanessa Zallianda</td>
+            </tr>
+            <tr>
+                <td>Tempat, Tgl Lahir</td>
+                <td>Sumatra Barat, 2007</td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>Indonesia </td>
+            </tr>
+            <tr>
+                <td>No. HP</td>
+                <td>08xxxxxxxxxx</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="section">
+        <h2>💡 Keahlian</h2>
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">java </div>
+            <div class="skill">Responsive Design</div>
+            <div class="skill">UI/UX Dasar</div>
+            <div class="skill">JavaScript Dasar</div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>
+            <a href="#">GitHub</a> |
+            <a href="#">LinkedIn</a> |
+            <a href="#">Instagram</a>
+        </p>
+        <p>© 2025 Portfolio</p>
+    </div>
+
+</div>
+
+</body>
+</html>
